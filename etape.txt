@@ -1,0 +1,45 @@
+virtualenv <NOM_DE_VOTRE_ENV_V>
+(tjs dans le dossier atelier ou il y a dossier env))
+<NOM_DE_VOTRE_ENV_V>\Scripts\Activate
+pip install django==4.1
+
+//deactivate
+
+py -m django --version
+(env) 4.1
+
+django-admin startproject <Nom_de_votre_projet>
+
+cd <Nom_de_votre_projet>
+code.
+
+python manage.py startapp <Nom_Application> (Un projet Django s’agit d’une collection d’applications + Fichiers de paramétrage.)
+//settings.py(qui est dans le dossier sous le nom <Nom_de_votre_projet>: INSTALLED_APPS on ajoute 'Nom_Application'
+the work is in models.py (Nom_Application)
+
+py manage.py startapp Event
+py manage.py startapp Person
+
+settings.py (as mentioned before)
+Event=> models.py
+
+pip install Pillow
+
+py manage.py makemigrations (pour détecter les changements)
+py manage.py makemigrations <Nom_Application> (more specific)
+
+py manage.py migrate
+
+py manage.py createsuperuser
+
+python manage.py runserver
+python manage.py runserver 8080
+
+/admin/ : safa+safa
+
+admin.py:(pour voir les tables dans le browser) ajouter du code (par exp le dossier du model Event)
+
+function=> @login_required
+class => héritage de LoginRequiredMixin
+
+pip install djangorestframework
